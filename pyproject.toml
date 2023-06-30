@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sms-sim"
+version = "0.0.1"
+authors = [
+  { name="Chris Moriarty", email="cmoriarty@gmail.com" },
+]
+description = "Simulates sending a large number of SMS alerts, like for an emergency alert service."
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy>=1.24.3",
+    "pika>=1.3.2",
+    "streamlit>=1.23.1"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+"Homepage" = "https://github.com/ChrisMoriarty/sms-sim"
+"Bug Tracker" = "https://github.com/ChrisMoriarty/sms-sim/issues"
